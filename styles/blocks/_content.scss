@@ -1,0 +1,53 @@
+.content {
+  flex: 1;
+  margin-top: 51px;
+
+  @include mobile {
+    margin-top: 68px;
+  }
+
+  &__header {
+    position: sticky;
+    top: 51px;
+    z-index: 8;
+    display: flex;
+    column-gap: 4px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--color-light);
+    
+    @include mobile {
+      top: 68px
+    }
+
+    &-left{
+      display: flex;
+      column-gap: 16px;
+      align-items: center;
+      justify-content: center;
+
+      @include mobile{
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    &-right{
+      display: flex;
+      column-gap: 4px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-name{
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+
+      @include mobile {
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+    }
+  }
+
+}

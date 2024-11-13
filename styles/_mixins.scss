@@ -1,0 +1,58 @@
+/*для задания динамически изменяющегося размера текста*/
+@mixin fluid-text ($min: 16, $max:48){
+  font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
+}
+
+/*для сброса дефолтных настроек у ссылок*/
+@mixin reset-link {
+  color: inherit; /*цвет текста ссылки будет наследоваться от родителя*/
+  &,
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+/*для сброса дефолтных настроек у кнопок*/
+@mixin reset-button{
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin flex-center($isInline: false) { /*аргумент опциональный булевый параметр, он может принимать 2 значения тру и фолс*/
+  @if $isInline{ /*если тру, то вот это*/
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+
+  justify-content: center;
+  align-items: center;
+}
+
+/*абсолютное позиционирование по центру*/
+@mixin abs-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+/*задаем размеры с пропорциями 1 к 1*/
+@mixin square($size){
+  width: $size;
+  aspect-ratio: 1;
+}
+
+@mixin visually-hidden{
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}

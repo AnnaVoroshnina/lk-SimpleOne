@@ -1,0 +1,27 @@
+:root{
+  --color-text: rgba(46, 50, 56, 0.22);
+  --color-light: #FFFFFF;
+  --color-gray: #ABB1BA;
+  --color-gray-alt: #D5D8DD;
+  --color-gray-light: #FCFCFD;
+  --color-accent: #0078CF;
+  --color-accent-alt: #99D5FF;
+  --color-accent-light: #E5F4FF;
+
+
+  --border-gray: 1px solid var(--color-gray);
+  --border-gray-alt: 1px solid var(--color-gray-alt);
+
+  --border-accent: 1px solid var(--color-accent-alt);
+  --border-radius: 4px;
+
+  --font-family-base: 'Open Sans', sans-serif;
+
+  --container-width: 1940px;
+  --container-padding-x: 16px;
+
+  --input-height: 32px;
+  --button-height: 32px;
+
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,11 @@
+.profile {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &__image {
+    border-radius: 50%;
+  }
+}

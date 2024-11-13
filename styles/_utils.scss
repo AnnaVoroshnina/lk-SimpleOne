@@ -1,0 +1,32 @@
+/*Утилитарные классы*/
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x));
+  margin-inline: auto; /*блок будет центрироваться по горизонтали*/
+}
+.main-container {
+  max-width: calc(var(--container-width) + var(--container-padding-x));
+  margin-inline: auto; /*блок будет центрироваться по горизонтали*/
+  display: flex;
+
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile { /*скроет элемент на мобильных устройствах*/
+  @include mobile {
+    display: none !important;
+  }
+}
+.hidden-tablet { /*скроет элемент на мобильных устройствах*/
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visible-mobile { /*отобразит элемент на мобильных устр-х, но скроет на ширинах больше чем моб устр.*/
+  @include mobile-above {
+    display: none !important;
+  }
+}

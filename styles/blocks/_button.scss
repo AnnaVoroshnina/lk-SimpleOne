@@ -1,0 +1,31 @@
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  outline: none;
+  cursor: pointer;
+
+  &-light {
+    border: var(--border-gray-alt);
+    background-color: var(--color-light);
+  }
+  &-accent{
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    border:none;
+  }
+
+  &-square {
+    border: 1px solid #D5D8DD;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+  }
+}

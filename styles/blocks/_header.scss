@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  padding: 8px 16px;
+  border-bottom: var(--border-gray-alt);
+  background-color: var(--color-light);
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    margin-left: auto; /*прижать справа*/
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    &-search {
+      margin-right: 16px;
+    }
+
+    &-profile {
+      margin-right: 8px;
+
+      @include mobile {
+        margin-right: 16px;
+      }
+    }
+
+  }
+}
