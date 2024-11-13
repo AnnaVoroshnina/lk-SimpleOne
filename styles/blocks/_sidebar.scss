@@ -20,6 +20,14 @@
     height: 100%;
     border-right: var(--border-gray-alt);
 
+    &--fiction {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 56px;
+      height: 100%;
+    }
+
     &-btn {
       width: 52px;
       height: 52px;
@@ -28,6 +36,7 @@
       align-items: center;
       justify-content: center;
       border: none;
+      cursor: pointer;
 
       &.active{
         color: #005999;
@@ -39,7 +48,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 56px;
     background-color: var(--color-gray-light);
 
     &-filter{

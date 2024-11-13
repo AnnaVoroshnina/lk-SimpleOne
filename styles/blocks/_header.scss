@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   z-index: 9;
-  padding: 8px 16px;
+  padding-block: 8px;
   border-bottom: var(--border-gray-alt);
   background-color: var(--color-light);
   width: 100%;
@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-inline: 16px;
   }
 
   &__menu {

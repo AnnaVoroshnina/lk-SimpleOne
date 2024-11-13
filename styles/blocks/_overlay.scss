@@ -20,14 +20,16 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
-    border-radius:  var(--border-radius);
+    border-radius: var(--border-radius);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 70%;
+    max-width: 800px;
+    width: calc(100vw - 32px);
+
 
     @include tablet {
       width: calc(100vw - 32px);
     }
-    @include mobile{
+    @include mobile {
       top: 0;
       width: 100vw;
     }
@@ -35,7 +37,7 @@
     & header {
       position: static;
       background-color: transparent;
-      @include  mobile{
+      @include mobile {
         border-bottom: var(--border-gray-alt);
         margin-bottom: 16px;
       }
@@ -43,22 +45,17 @@
   }
 
   &__button {
-    @include mobile{
-      display: flex;
-      flex-direction: column;
-      row-gap: 16px;
-      position: absolute;
-      bottom: 16px;
-      width: 92%;
-    }
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 100%;
+    padding-left: 16px;
+    padding-bottom: 16px;
 
     & button {
-      @include mobile{
-        z-index: 100;
-        width: 100%;
-        height: 32px;
-      }
+      z-index: 100;
+      width: 100%;
+      height: 32px;
     }
   }
-
 }

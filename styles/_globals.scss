@@ -3,14 +3,12 @@
 /*Глобальные стили*/
 
 body{
-  @include fluid-text (16, 18);
+  @include fluid-text (14, 15);
 
   font-family: var(--font-family-base);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.28;
-  color: var(--color-dark);
-  background-color: var(--color-light);
   height: 100%;
 }
 
@@ -25,21 +23,4 @@ svg *{
 a{
   text-decoration: none;
   color: inherit; /*наследуется от родителя*/
-}
-
-h1, h2, h3, h4{
-  font-weight: 500;
-}
-
-h1, .h1{
-  @include fluid-text (43, 60)
-}
-h2, .h2{
-  @include fluid-text (36, 40)
-}
-h3, .h3 {
-  @include fluid-text (26, 30)
-}
-h4, .h4{
-  @include fluid-text (18, 20)
 }
